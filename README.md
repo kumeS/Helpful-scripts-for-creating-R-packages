@@ -162,6 +162,8 @@ system("R CMD check --no-vignettes --timings --no-multiarch AHBioImageDbs_0.99.1
 BiocCheck::BiocCheck("./AHBioImageDbs_0.99.1.tar.gz")
 ```
 
+## For Submit
+
 ```r
 setwd("./BioImageDbs")
 
@@ -184,8 +186,6 @@ system('git commit -m "v-0.99.3"')
 system("git push upstream master")
 system("git push origin master")
 ```
-
-## For Submit
 
 ## Memo
 
