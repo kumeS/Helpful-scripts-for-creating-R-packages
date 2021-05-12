@@ -4,9 +4,9 @@
 
 Folder (Working directory) <br>
 ├ [Your package]/ <br>
-│   ├ fuga <br>
-│   ├ fuga <br>
-│   └ fuga <br>
+ │   ├ fuga <br>
+ │   ├ fuga <br>
+ │   └ fuga <br>
 
 ├── build_test.R (a script to build your package)
 
