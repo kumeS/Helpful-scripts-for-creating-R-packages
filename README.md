@@ -98,7 +98,7 @@ open "[Your GitHub URL]"
 exit
 ```
 
-- .gitignore
+- .gitignore file
 
 ```
 .Rproj.user
@@ -162,8 +162,69 @@ system("R CMD check --no-vignettes --timings --no-multiarch AHBioImageDbs_0.99.1
 BiocCheck::BiocCheck("./AHBioImageDbs_0.99.1.tar.gz")
 ```
 
+```r
+setwd("./BioImageDbs")
+
+system("git remote -v")
+#system("git remote remove upstream")
+system("git remote add upstream git@git.bioconductor.org:packages/BioImageDbs.git")
+
+system("git remote -v")
+#origin	git@git.bioconductor.org:packages/BioImageDbs (fetch)
+#origin	git@git.bioconductor.org:packages/BioImageDbs (push)
+#upstream	git@git.bioconductor.org:packages/BioImageDbs.git (fetch)
+#upstream	git@git.bioconductor.org:packages/BioImageDbs.git (push)
+
+system("git fetch --all")
+system("git merge upstream/master")
+system("git merge origin/master")
+
+system("git add -A")
+system('git commit -m "v-0.99.3"')
+system("git push upstream master")
+system("git push origin master")
+```
+
 ## For Submit
 
+## Memo
 
+```
+$ git remote show
+origin
+
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+$ git branch 
+* main
+
+#Create the branch
+$ git checkout -b devel main
+M       README.md
+Switched to a new branch 'devel'
+
+$ git branch 
+* devel
+  main
+
+$ git branch main
+fatal: A branch named 'main' already exists.
+
+$ git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+$ git branch 
+  devel
+* main
+
+$ git remote -v
+origin  https://github.com/kumeS/Helpful-scripts-for-creating-R-packages.git (fetch)
+origin  https://github.com/kumeS/Helpful-scripts-for-creating-R-packages.git (push)
+```
 
 
