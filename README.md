@@ -9,8 +9,8 @@
 │           ├── fuga
 │           └── fuga
 ├── build_test.R (a script to build your package)
-├── hoge_dir1
-└── hoge_dir2
+├── hoge_dir1/
+└── hoge_dir2/
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
