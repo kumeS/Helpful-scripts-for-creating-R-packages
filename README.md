@@ -52,20 +52,21 @@
 
 ## build_test.R
 
-### install a local R package on R (with deleting variables in your environment)
+- install a local R package on R (with deleting variables in your environment)
 
 ```r
 #XXX
 ```
 
-### reinstall a local R package on R (without deleting any variables in your environment)
+- reinstall a local R package on R (without deleting any variables in your environment)
 
 ```r
 #XXX
 ```
 
-## batch file (.command) to uploads files to GitHub.
-    - [github.command](https://github.com/kumeS/Helpful-scripts-for-creating-R-packages/blob/main/github.command)
+## Batch file (.command) to uploads files to GitHub.
+
+- [github.command](https://github.com/kumeS/Helpful-scripts-for-creating-R-packages/blob/main/github.command)
 
 ```sh
 #!/bin/bash
@@ -97,7 +98,7 @@ open "[Your GitHub URL]"
 exit
 ```
 
-## run the R-devel of Docker / Bioconductor on R
+## Run the R-devel of Docker / Bioconductor on R
 
 ```r
 system("docker run \\
