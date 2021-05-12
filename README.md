@@ -3,12 +3,19 @@
 - Directory structure
 
 Folder (Working directory)
+
 ├── [Your package]
+
 │   ├── fuga
+
 │   ├── fuga
+
 │   └── fuga
+
 ├── build_test.R (a script to build your package)
+
 ├── hoge_dir1
+
 └── hoge_dir2
 
 - install a local R package on R (with deleting variables in your environment)
