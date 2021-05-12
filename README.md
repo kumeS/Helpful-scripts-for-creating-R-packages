@@ -3,10 +3,10 @@
 - Directory structure
 
 Folder (Working directory) <br>
-├ [Your package]/
-│   ├ fuga
-│   ├ fuga
-│   └ fuga
+├ [Your package]/ <br>
+│   ├ fuga <br>
+│   ├ fuga <br>
+│   └ fuga <br>
 
 ├── build_test.R (a script to build your package)
 
