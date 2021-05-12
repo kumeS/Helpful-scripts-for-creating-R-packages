@@ -2,25 +2,18 @@
 
 - Directory structure
 
-markdown-magic-directory-tree/
-├── .npmrc
-├── example.js
-├── index.js
-├── package.json
-├── README.md
-└── yarn.lock
-
-Folder (Working directory) <br>
-├ [Your package]/ <br>
- │   ├ fuga <br>
- │   ├ fuga <br>
- │   └ fuga <br>
-
+<!-- AUTO-GENERATED-CONTENT:START (DIRTREE:dir=./&depth=1) -->
+```
+Folder (Working directory)
+├── [Your package]/
+│   ├── fuga
+│   └── fuga
 ├── build_test.R (a script to build your package)
-
 ├── hoge_dir1
-
 └── hoge_dir2
+```
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 
 - install a local R package on R (with deleting variables in your environment)
 
