@@ -1,12 +1,12 @@
 # Useful scripts for creating R packages
 
-- install R package on R
+- install a local R package on R (with deleting environment variables)
 
 ```r
 #XXX
 ```
 
-- reinstall R package on R
+- reinstall a local R package on R (without deleting environment variables)
 
 ```r
 #XXX
