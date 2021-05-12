@@ -1,4 +1,4 @@
-# Useful scripts for creating R packages
+# Helpful scripts for creating R packages
 
 - Working directory structure
 
