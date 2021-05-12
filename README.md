@@ -112,6 +112,7 @@ exit
 ## Run the R-devel of Docker / Bioconductor on R
 
 ```r
+#run docker
 system("docker run \\
         -d \\
         --name bioc \\
@@ -119,6 +120,7 @@ system("docker run \\
         -e PASSWORD=bioc \\
         -p 8787:8787 \\
         bioconductor/bioconductor_docker:devel")
+
 #check CONTAINER
 system("docker ps")
 
