@@ -2,7 +2,7 @@
 
 - Directory structure
 
-Folder (Working directory)
+Folder (Working directory) <br>
 ├── [Your package]
 │   ├── fuga
 │   ├── fuga
