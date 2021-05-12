@@ -81,7 +81,7 @@ cd $MY_DIRNAME
 cd ./[Your GitHub Directory]
 
 # If you use MacOSX
-du -a | grep .DS_Store | xargs rm -rf
+#du -a | grep .DS_Store | xargs rm -rf
 
 git add -A
 
@@ -96,6 +96,17 @@ git pull
 open "[Your GitHub URL]"
 
 exit
+```
+
+- .gitignore
+
+```
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+
 ```
 
 ## Run the R-devel of Docker / Bioconductor on R
