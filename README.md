@@ -2,6 +2,8 @@
 
 ## Working directory structure
 
+- Package
+
 <!-- AUTO-GENERATED-CONTENT:START (DIRTREE:dir=./&depth=1) -->
 ```
 . (Working directory)
@@ -25,13 +27,38 @@
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-## install a local R package on R (with deleting variables in your environment)
+- AnnotationHub / ExperimentHub (Bioconductor)
+
+<!-- AUTO-GENERATED-CONTENT:START (DIRTREE:dir=./&depth=1) -->
+```
+. (Working directory)
+├── [Your package]/
+│           ├── inst/
+│           │     ├── extdata/
+│           │     └── script/
+│           ├── man/
+│           ├── vignettes/
+│           ├── DESCRIPTION
+│           ├── NAMESPACE
+│           ├── NEWS
+│           └── README.md
+├── build_test.R (any R file, a script to build your package)
+├── R.Rproj (any R project)
+├── github.command (a script to puch your package to GitHub)
+├── hoge_dir1/
+└── hoge_dir2/
+```
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+## build_test.R
+
+### install a local R package on R (with deleting variables in your environment)
 
 ```r
 #XXX
 ```
 
-## reinstall a local R package on R (without deleting any variables in your environment)
+### reinstall a local R package on R (without deleting any variables in your environment)
 
 ```r
 #XXX
@@ -120,5 +147,11 @@ sudo apt-get install texlive-fonts-recommended texlive-fonts-extra
 system("R CMD INSTALL AHBioImageDbs")
 system("R CMD build --keep-empty-dirs --no-resave-data AHBioImageDbs")
 system("R CMD check --no-vignettes --timings --no-multiarch AHBioImageDbs_0.99.1.tar.gz")
-BiocCheck("./AHBioImageDbs_0.99.1.tar.gz")
+BiocCheck::BiocCheck("./AHBioImageDbs_0.99.1.tar.gz")
 ```
+
+## For Submit
+
+
+
+
