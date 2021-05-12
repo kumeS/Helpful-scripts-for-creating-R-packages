@@ -1,16 +1,16 @@
 # Useful scripts for creating R packages
 
-- Directory structure
+- Working directory structure
 
 <!-- AUTO-GENERATED-CONTENT:START (DIRTREE:dir=./&depth=1) -->
 ```
-Folder (Working directory)
- ├── [Your package]/
- │           ├── fuga
- │           └── fuga
- ├── build_test.R (a script to build your package)
- ├── hoge_dir1
- └── hoge_dir2
+. (Working directory)
+├── [Your package]/
+│           ├── fuga
+│           └── fuga
+├── build_test.R (a script to build your package)
+├── hoge_dir1
+└── hoge_dir2
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
