@@ -1,6 +1,6 @@
 # Helpful scripts for creating R packages
 
-- Working directory structure
+## Working directory structure
 
 <!-- AUTO-GENERATED-CONTENT:START (DIRTREE:dir=./&depth=1) -->
 ```
@@ -15,26 +15,26 @@
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-- install a local R package on R (with deleting variables in your environment)
+## install a local R package on R (with deleting variables in your environment)
 
 ```r
 #XXX
 ```
 
-- reinstall a local R package on R (without deleting any variables in your environment)
+## reinstall a local R package on R (without deleting any variables in your environment)
 
 ```r
 #XXX
 ```
 
-- Batch file (.command) to uploads files to GitHub.
+## batch file (.command) to uploads files to GitHub.
     - [github.command](https://github.com/kumeS/Helpful-scripts-for-creating-R-packages/blob/main/github.command)
 
 ```sh
 #XXX
 ```
 
-- run the R-devel of Docker / Bioconductor on R
+## run the R-devel of Docker / Bioconductor on R
 
 ```r
 system("docker run \\
@@ -55,9 +55,9 @@ system("open http://localhost:8787")
 system("docker stop [CONTAINER ID]")
 ```
 
-- Run within Bioc Docker (ex. AHBioImageDbs_0.99.1)
+## Run within Bioc Docker (ex. AHBioImageDbs_0.99.1)
 
-## install the packages in Docker/Bioconductor
+### install the packages in Docker/Bioconductor
 
 ```r
 BiocManager::install("AnnotationHub")
@@ -70,7 +70,7 @@ library(AnnotationHub)
 library(ExperimentHub)
 ```
 
-## (If you need) install tex/pdfLatex on Terminal window by Root User
+### (If you need) install tex/pdfLatex on Terminal window by Root User
 
 ```sh
 sudo apt-get update
@@ -78,7 +78,7 @@ sudo apt-get install texlive-latex-base texlive-latex-extra texinfo
 sudo apt-get install texlive-fonts-recommended texlive-fonts-extra
 ```
 
-## install test for BioImageDbs package
+### install test for BioImageDbs package
 
 ```r
 system("R CMD INSTALL AHBioImageDbs")
