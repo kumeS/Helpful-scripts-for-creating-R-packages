@@ -3,11 +3,8 @@
 - Directory structure
 
 Folder (Working directory)
-
 ├── [Your package]
-
 │   ├── fuga
-
 │   ├── fuga
 
 │   └── fuga
