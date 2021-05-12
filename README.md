@@ -3,17 +3,13 @@
 - Directory structure
 
 .
-├── dir1<br>
-│   ├── file11.ext<br>
-│   └── file12.ext<br>
-├── dir2<br>
-│   ├── file21.ext<br>
-│   ├── file22.ext<br>
-│   └── file23.ext<br>
-├── dir3<br>
-├── file_in_root.ext<br>
-└── README.md<br>
-
+ * [tree-md](./tree-md)
+ * [dir2](./dir2)
+   * [file21.ext](./dir2/file21.ext)
+   * [file22.ext](./dir2/file22.ext)
+   * [file23.ext](./dir2/file23.ext)
+ * [dir1](./dir1)
+ * 
 Folder (Working directory) <br>
 ├ [Your package]/ <br>
  │   ├ fuga <br>
