@@ -1,1 +1,2 @@
-# Useful-scripts-for-creating-R-packages
+# Useful scripts for creating R packages
+
