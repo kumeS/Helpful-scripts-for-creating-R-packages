@@ -3,16 +3,16 @@
 - Directory structure
 
 .
-├── dir1
-│   ├── file11.ext
-│   └── file12.ext
-├── dir2
-│   ├── file21.ext
-│   ├── file22.ext
-│   └── file23.ext
-├── dir3
-├── file_in_root.ext
-└── README.md
+├── dir1<br>
+│   ├── file11.ext<br>
+│   └── file12.ext<br>
+├── dir2<br>
+│   ├── file21.ext<br>
+│   ├── file22.ext<br>
+│   └── file23.ext<br>
+├── dir3<br>
+├── file_in_root.ext<br>
+└── README.md<br>
 
 Folder (Working directory) <br>
 ├ [Your package]/ <br>
