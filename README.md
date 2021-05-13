@@ -226,7 +226,7 @@ system("git push upstream master")
 system("git push origin master")
 ```
 
-## Memo
+## Memo for Git command
 
 ```
 $ git remote show
