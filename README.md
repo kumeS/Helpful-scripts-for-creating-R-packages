@@ -201,7 +201,7 @@ system("R CMD check --no-vignettes --timings --no-multiarch AHBioImageDbs_0.99.1
 BiocCheck::BiocCheck("./AHBioImageDbs_0.99.1.tar.gz")
 ```
 
-## For Submit
+## For Submit  (ex. AHBioImageDbs_0.99.1)
 
 ```r
 setwd("./BioImageDbs")
