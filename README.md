@@ -2,7 +2,7 @@
 
 ## Working directory structure
 
-- Package
+- Software package
 
 <!-- AUTO-GENERATED-CONTENT:START (DIRTREE:dir=./&depth=1) -->
 ```
@@ -27,6 +27,58 @@
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+
+## build_test.R for Software package
+
+- install a local R package on R (with deleting variables in your environment)
+
+```r
+#install.packages("roxygen2")
+
+if(TRUE){
+rm(list=ls())
+system("rm -rf ./[Your package]/NAMESPACE; rm -rf ./[Your package]/man/*")
+roxygen2::roxygenise("./[Your package]")
+system("cat ./[Your package]/NAMESPACE")
+remove.packages("[Your package]", lib=.libPaths())
+.rs.restartR()
+}
+
+if(TRUE){
+system("R CMD INSTALL [Your package]")
+library([Your package])
+}
+```
+
+- reinstall a local R package on R (without deleting any variables in your environment)
+
+```r
+#install.packages("roxygen2")
+
+if(TRUE){
+system("rm -rf ./[Your package]/NAMESPACE")
+roxygen2::roxygenise("./[Your package]")
+system("cat ./[Your package]/NAMESPACE")
+remove.packages("[Your package]", lib=.libPaths())
+.rs.restartR()
+}
+
+if(TRUE){
+system("R CMD INSTALL [Your package]")
+library([Your package])
+}
+```
+
+An alternative way without shell,
+
+```r
+#install.packages("readr")
+
+file.remove("./[Your package]/NAMESPACE")
+file.remove(dir("./[Your package]/man", pattern=".Rd", full.names = T))
+readr::read_lines("./[Your package]/NAMESPACE")
+```
+
 - AnnotationHub / ExperimentHub (Bioconductor)
 
 <!-- AUTO-GENERATED-CONTENT:START (DIRTREE:dir=./&depth=1) -->
@@ -35,12 +87,11 @@
 ├── [Your package]/
 │           ├── inst/
 │           │     ├── extdata/
+│           │     ├── hoge_dir3/
 │           │     └── script/
 │           ├── man/
 │           ├── vignettes/
 │           ├── DESCRIPTION
-│           ├── NAMESPACE
-│           ├── NEWS
 │           └── README.md
 ├── build_test.R (any R file, a script to build your package)
 ├── R.Rproj (any R project)
@@ -49,20 +100,6 @@
 └── hoge_dir2/
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
-
-## build_test.R
-
-- install a local R package on R (with deleting variables in your environment)
-
-```r
-#XXX
-```
-
-- reinstall a local R package on R (without deleting any variables in your environment)
-
-```r
-#XXX
-```
 
 ## Batch file (.command) to uploads files to GitHub.
 
@@ -80,7 +117,7 @@ cd $MY_DIRNAME
 
 cd ./[Your GitHub Directory]
 
-# If you use MacOSX
+# If you use MacOSX, it would need.
 #du -a | grep .DS_Store | xargs rm -rf
 
 git add -A
@@ -203,17 +240,18 @@ $ git branch -a
 $ git branch 
 * main
 
-#Create the branch
+#Create the devel branch
 $ git checkout -b devel main
 M       README.md
 Switched to a new branch 'devel'
 
-$ git branch 
+#An alternative way,
+$ git checkout devel main
+$ git checkout -b devel
+
+$ git branch
 * devel
   main
-
-$ git branch main
-fatal: A branch named 'main' already exists.
 
 $ git checkout main
 M       README.md
@@ -223,6 +261,9 @@ Your branch is up to date with 'origin/main'.
 $ git branch 
   devel
 * main
+
+$ git branch main
+fatal: A branch named 'main' already exists.
 
 $ git remote -v
 origin  https://github.com/kumeS/Helpful-scripts-for-creating-R-packages.git (fetch)
