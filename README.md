@@ -221,7 +221,7 @@ system("git merge upstream/master")
 system("git merge origin/master")
 
 system("git add -A")
-system('git commit -m "v-0.99.3"')
+system('git commit -m "v-0.99.1"')
 system("git push upstream master")
 system("git push origin master")
 ```
