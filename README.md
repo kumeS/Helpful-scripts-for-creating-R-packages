@@ -281,11 +281,11 @@ vim .git/config
 
 ```
 
-Rewrite `.git/config ` as follows.
+Rewrite `.git/config` as follows.
 
 ```
 [remote "origin"]
-	url = https://kumeS:[Your Token]@github.com/kumeS/rMiW.git
+	url = https://kumeS:[Your Access Token]@github.com/kumeS/rMiW.git
 ```
 
 
