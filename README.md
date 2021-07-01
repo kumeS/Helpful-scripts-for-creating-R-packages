@@ -270,4 +270,22 @@ origin  https://github.com/kumeS/Helpful-scripts-for-creating-R-packages.git (fe
 origin  https://github.com/kumeS/Helpful-scripts-for-creating-R-packages.git (push)
 ```
 
+## GitHub - personal access token (ex. kumeS/rMiW.git)
+
+```
+git clone https://github.com/kumeS/rMiW.git
+
+cd ./rMiW
+
+vim .git/config 
+
+```
+
+Rewrite `.git/config ` as follows.
+
+```
+[remote "origin"]
+	url = https://kumeS:[Your Token]@github.com/kumeS/rMiW.git
+```
+
 
